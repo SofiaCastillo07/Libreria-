@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Programa Libreria</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="bootstrap" viewBox="0 0 118 94">
+            <symbol id="tools" viewBox="0 0 16 16">
+                <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+            </symbol>   
+            </symbol>
+        </svg>
+        <div class="b-example-divider"></div>
+
+        <div align="center" class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Sistema libreria</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+                </div>
+                  
+                <div>
+                  <h2>Carga de libros</h2>
+                  <p>En el siguiente enlace podrá ingresar al formulario para cargar libros.            </p>
+                  <a th:href="@{/libro/registro}" class="btn btn-primary">Ir</a> 
+                </div>
+              </div>
+                
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+                </div>
+                <div>
+                  <h2>Carga de autores</h2>
+                  <p>En el siguiente enlace podrá ingresar al formulario para cargar autores.            </p>
+                  <a th:href="@{/autor/cargarautor}" class="btn btn-primary">Ir</a>
+                </div>
+              </div>
+                
+              <div class="col d-flex align-items-start">
+                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+                </div>
+                <div>
+                  <h2>Listado de libros</h2>
+                  <p>En el siguiente enlace podrá ingresar al formulario para listar los libros cargados.</p>
+                  <a th:href="@{/libro/lista}" class="btn btn-primary">Ir</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    </body>
+</html>
